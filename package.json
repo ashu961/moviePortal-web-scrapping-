@@ -1,0 +1,65 @@
+{
+  "name": "movie_helper",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Ashutosh Behera",
+    "email": "beheraashutosh5@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "cjstoes6": "cjs-to-es6 --verbose src",
+    "test": "yarn run lint && yarn run mocha",
+    "lint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/ --exec babel-node",
+    "start": "babel-node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^4.5.1",
+    "@feathersjs/errors": "^4.5.1",
+    "@feathersjs/express": "^4.5.1",
+    "@feathersjs/feathers": "^4.5.1",
+    "@feathersjs/socketio": "^4.5.1",
+    "@feathersjs/transport-commons": "^4.5.8",
+    "cheerio": "^1.0.0-rc.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "helmet": "^3.21.2",
+    "puppeteer": "^5.2.1",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "axios": "^0.19.2",
+    "cjs-to-es6": "^1.1.1",
+    "eslint": "^6.8.0",
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2"
+  }
+}
